@@ -36,9 +36,6 @@ angular
 				name: 'Fridge',
 				items: [
 					{
-						name: 'fridgeitem1'
-					},
-					{
 						name: 'fridgeitem2'
 					}
 				]

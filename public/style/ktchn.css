@@ -40,6 +40,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
      -webkit-transition: all .5s linear;
      transition: all .5s linear;}
 ul.recipes { text-align: right; }
+.recipes p { max-width:110px; }
 .recipes li a { color:#fff; font-size: 20px; line-height: 37px; }
 .recipes li a:hover { opacity:0.9; background:#000;}
 .items li.expired { background:rgba(255, 0, 0, 0.26) !important; }

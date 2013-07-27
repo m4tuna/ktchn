@@ -8,8 +8,8 @@
 					<h1>{{ board.name }}</h1><br />
 					<p>Add items to your {{ board.name | lowercase }}.</p>
 					<ul class="items">
-						<li class="top"><input type="text" class="span8" ng-model="board.newitem" /> <a href="#" class="btn-ktchn span3 first-span pull-right" prevent-default="click" ng-click="addItem(board)">add</a></li>
-						<li ng-repeat="item in board.items">{{ item.name }}</li>
+						<li class="top"><input type="text" class="span8" ng-model="board.newitem" /> <button type="button" class="btn btn-link btn-ktchn span3 first-span pull-right" ng-click="addItem(board)">add</button></li>
+						<li ng-repeat="item in board.items">{{ item.name }} <button class="btn btn-link" ng-click="rmItem(board,$index)" type="button">&times;</button></li>
 					</ul>
 				</li>
 				<!-- <li class="span3">

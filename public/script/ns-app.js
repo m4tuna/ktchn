@@ -74,6 +74,10 @@ angular
 
 			delete board.newitem;
 		}
+
+		$scope.rmItem = function(board,item) {
+			board.items.splice(item,1)
+		}
 	}
 ]).controller('HomeCtrl', [ '$scope', 'AppState',
 	function($scope, AppState) {

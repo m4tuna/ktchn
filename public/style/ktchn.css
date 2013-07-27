@@ -17,6 +17,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .header .home-logo { float:right; margin-top:10px;  }
 .home-logo { background:url(/img/logo.png); display:block; height: 38px; width: 44px; }
 .home-logo:focus, .home-logo:active { height:0; }
+.population { width:200px; float:left; clear:both;}
 .home-logo:hover {
     -webkit-animation-name: spin;
     -webkit-animation-duration: 900ms;
@@ -91,6 +92,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 ul.recipes { text-align: left; padding:0 30px; }
 .btn-link:hover { color:#fff;}
 .about p { font-size: 20px; line-height: 30px; }
+
+.about ul li { background:#000; padding:20px 18px; margin:10px auto; color:#fff; font-size:20px; line-height:25px; font-family: 'Lato', sans-serif; }
 .recipes p { max-width:110px; }
 .eatout li { float:left; clear:both; width:100%; }
 .eatout li:hover { opacity:0.8; background:rgba(255, 255, 255, 0.26)}

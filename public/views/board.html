@@ -1,4 +1,3 @@
-<script>$('.pop').popover();</script>
 <div class="wrapper row-fluid myktchn">
 	<div class="tagline ninja-fade-in">
 		<h2>{{ state.user.name }}'s ktchn <a data-toggle="collapse" data-target="#recipes" class="inline btn-ktchn giant"><i class="icon-food"></i> generate possible recipes</a></h2>
@@ -37,10 +36,11 @@
 						<input type="text" class="span8" ng-model="board.newitem" />
 						<button type="button" class="btn add-btn btn-ktchn" ng-click="addItem(board)">add +</button>
 					</li>
-					<li ng-repeat="item in board.items" class="pop" data-trigger="hover" data-toggle="popover" data-content="{{ item.created_at }}" data-original-title="{{ item.name }}">
+					<li ng-repeat="item in board.items" class="pop" data-placement="top" data-trigger="hover" data-toggle="popover" data-content="{{ item.created_at }}" data-original-title="{{ item.name }}">
+						<script>$('.pop').popover();</script>
 						{{ item.name }}
 						<span class="pull-right">
-							<a href="#" class="btn-ktchn-tiny">ran out</a> 
+							<a href="#" class="btn-ktchn-tiny">out</a> 
 							<a class="btn-ktchn-tiny" ng-click="rmItem(board,$index)" type="button">&times;</a>
 						</span>
 					</li>

@@ -100,7 +100,7 @@ ul.recipes { text-align: left; border:1px dashed #fff; padding:0 30px; }
 .items li.expired { background:rgba(255, 0, 0, 0.26) !important; }
 .items li.check { background:rgba(214, 255, 0, 0.26) !important; }
 .items li:hover { opacity:0.7;}
-.myktchn .boards li { border:1px dashed rgba(255, 255, 255, 0); background:rgba(0, 0, 0, 0.6); color:#fff; font-family: 'Lato', sans-serif; padding: 20px 5px; font-size:17px; 
+.myktchn .boards li { border:1px dashed rgba(255, 255, 255, 0); background:rgba(0, 0, 0, 0.6); color:#fff; font-family: 'Lato', sans-serif; padding: 20px 5px; font-size:15px; 
  -moz-transition: all .5s linear;
      -webkit-transition: all .5s linear;
      transition: all .5s linear;}

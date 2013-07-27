@@ -5,7 +5,7 @@ h2, h3, h4 { font-weight:normal; }
 
 p, h2 { color:#fff; }
 
-.header { margin: 0; position: fixed; top: 0px; width: 90%; height: 58px; padding: 0 80px; box-shadow:1px 1px 1px #000; 
+.header { z-index:99999; margin: 0; position: fixed; top: 0px; width: 90%; height: 58px; padding: 0 80px; box-shadow:1px 1px 1px #000; 
 background: #ffffff; /* Old browsers */
 background: -moz-linear-gradient(top, #ffffff 0%, #eaeaea 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#eaeaea)); /* Chrome,Safari4+ */
@@ -73,7 +73,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .btn-ktchn { cursor:pointer; border:1px solid rgba(0, 0, 0, 0.26); background-color:#fff; padding:15px; font-family: 'Lato', sans-serif; font-size:15px; color:#000;}
 .btn-ktchn-tiny { cursor:pointer; border:1px solid rgba(0, 0, 0, 0.26); background-color:#fff; padding:4px; font-family: 'Lato', sans-serif; font-size:15px; color:#000;}
 .btn-ktchn-tiny:hover { opacity:0.6;}
-.boards { margin: 10px auto; background: rgba(255, 255, 255, 0.46); height: auto; padding: 50px 30px; display: block; float: left; width:96%; }
+.boards { margin: 10px auto; background: rgba(255, 255, 255, 0.63); height: auto; padding: 50px 30px; display: block; float: left; width:96%; }
 .stats { height:400px; }
 .stats li { line-height:30px; height:220px; background: rgba(255, 255, 255, 0.5); padding: 20px; box-shadow: 1px 0px 4px rgba(0, 0, 0, 0.26); }
 .stats li p { color:#000;}
@@ -84,13 +84,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 ul.recipes { text-align: right; }
 .about p { font-size: 20px; line-height: 30px; }
 .recipes p { max-width:110px; }
-.recipes li a { color:#fff; font-size: 20px; line-height: 37px; }
-.recipes li a:hover { opacity:0.9; background:#000;}
+.recipes li a { color:#fff; font-size: 20px; line-height: 37px;  }
+.recipes li { border:1px dashed rgba(255, 255, 255, 0); }
+.recipes li:hover { opacity:0.9; border:1px dashed #fff; }
 .items li.expired { background:rgba(255, 0, 0, 0.26) !important; }
 .items li.check { background:rgba(214, 255, 0, 0.26) !important; }
 .items li:hover { opacity:0.7;}
-.myktchn .boards li { background:rgba(0, 0, 0, 0.6); color:#fff; font-family: 'Lato', sans-serif; padding: 20px 5px; }
-
+.myktchn .boards li { border:1px dashed rgba(255, 255, 255, 0); background:rgba(0, 0, 0, 0.6); color:#fff; font-family: 'Lato', sans-serif; padding: 20px 5px; font-size:17px; 
+ -moz-transition: all .5s linear;
+     -webkit-transition: all .5s linear;
+     transition: all .5s linear;}
+.myktchn .boards li:hover { background:rgba(0, 0, 0, 0.7); }
+.myktchn .items li:hover { border:1px dashed #fff; }
 .footer { position:fixed; bottom:0; text-align: center; margin:0 auto; display:block; width:100%; background:#fff; }
 .footer small { text-align: center !important; margin:0 auto; }
 

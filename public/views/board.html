@@ -1,10 +1,10 @@
 <script>$('.pop').popover();</script>
 <div class="wrapper row-fluid myktchn">
 	<div class="tagline">
-		<h2>my ktchn <a data-toggle="collapse" data-target="#recipes" class="inline btn-ktchn giant">generate possible recipes</a></h2>
+		<h2>my ktchn <a data-toggle="collapse" data-target="#recipes" class="inline btn-ktchn giant"><i class="icon-food"></i> generate possible recipes</a></h2>
 		<div id="recipes" class="collapse">
 			<ul class="recipes inline">
-				<h2>Recipes</h2> 
+				<h2>recipes</h2> 
 				<li>
 					<a href="#"><img src="/img/4.jpg" height="100px" width="100px" class="img-polaroid">
 					<p>Chicken Parm</p></a>
@@ -21,28 +21,31 @@
 					<a href="#"><img src="/img/1.jpg" height="100px" width="100px" class="img-polaroid">
 					<p>Potluck Chicken</p></a>
 				</li>
+				<li class="pull-right">
+					<a href="#/recipes" class="btn-link">more recipes</a>
+				</li>
 			</ul>
 		</div>
 	</div>
 	<div class="row-fluid">
-			<ul class="inline centered boards">
-				<li class="span3" ng-repeat="board in state.boards">
-					<h1>{{ board.name }}</h1><br />
-					<p>Add items to your {{ board.name | lowercase }}.</p>
-					<ul class="items">
-						<li class="top">
-							<input type="text" class="span8" ng-model="board.newitem" />
-							<button type="button" class="btn btn-link btn-ktchn span3 first-span pull-right" ng-click="addItem(board)">add</button>
-						</li>
-						<li ng-repeat="item in board.items" class="pop" data-trigger="hover" data-toggle="popover" data-content="{{ item.created_at }}" data-original-title="{{ item.name }}">
-							{{ item.name }}
-							<span class="pull-right">
-								<a href="#" class="btn-ktchn-tiny">ran out</a> 
-								<a class="btn-ktchn-tiny" ng-click="rmItem(board,$index)" type="button">&times;</a>
-							</span>
-						</li>
-					</ul>
-				</li>
-			</ul>
-		</div>
+		<ul class="inline centered boards">
+			<li class="span3" ng-repeat="board in state.boards">
+				<h1>{{ board.name }}</h1><br />
+				<p>Add items to your {{ board.name | lowercase }}.</p>
+				<ul class="items">
+					<li class="top">
+						<input type="text" class="span8" ng-model="board.newitem" />
+						<button type="button" class="btn btn-link btn-ktchn span3 first-span pull-right" ng-click="addItem(board)">add</button>
+					</li>
+					<li ng-repeat="item in board.items" class="pop" data-trigger="hover" data-toggle="popover" data-content="{{ item.created_at }}" data-original-title="{{ item.name }}">
+						{{ item.name }}
+						<span class="pull-right">
+							<a href="#" class="btn-ktchn-tiny">ran out</a> 
+							<a class="btn-ktchn-tiny" ng-click="rmItem(board,$index)" type="button">&times;</a>
+						</span>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
 </div>

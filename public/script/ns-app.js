@@ -14,6 +14,7 @@ angular
 			.when('/about', { templateUrl: '/views/about.html', controller: 'HomeCtrl' })
 			.when('/login', { templateUrl: '/views/login.html', controller: 'HomeCtrl' })
 			.when('/board', { templateUrl: '/views/board.html', controller: 'BoardCtrl' })
+			.when('/recipes', { templateUrl: '/views/recipes.html', controller: 'HomeCtrl' })
 			.otherwise('/404', { templateUrl: '/views/404.html', controller: 'DefaultCtrl' });
 	}
 ]).controller('TopCtrl',[ '$scope', '$rootScope', 'AppState',

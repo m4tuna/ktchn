@@ -14,7 +14,8 @@ angular
 			.when('/about', { templateUrl: '/views/about.html', controller: 'HomeCtrl' })
 			.when('/login', { templateUrl: '/views/login.html', controller: 'LoginCtrl' })
 			.when('/board', { templateUrl: '/views/board.html', controller: 'BoardCtrl' })
-			.when('/recipes', { templateUrl: '/views/recipes.html', controller: 'HomeCtrl' })
+			.when('/eatout', { templateUrl: '/views/eatout.html', controller: 'BoardCtrl' })
+			.when('/recipes', { templateUrl: '/views/recipes.html', controller: 'BoardCtrl' })
 			.otherwise('/404', { templateUrl: '/views/404.html', controller: 'DefaultCtrl' });
 	}
 ]).controller('TopCtrl',[ '$scope', '$location', 'FireAuth', 'AppState',

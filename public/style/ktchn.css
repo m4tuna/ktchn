@@ -87,14 +87,28 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
  -moz-transition: all .5s linear;
      -webkit-transition: all .5s linear;
      transition: all .5s linear;}
-ul.recipes { text-align: left; border:1px dashed #fff; padding:0 30px; }
+ul.recipes { text-align: left; padding:0 30px; }
 .btn-link:hover { color:#fff;}
 .about p { font-size: 20px; line-height: 30px; }
 .recipes p { max-width:110px; }
+.eatout li { float:left; clear:both; width:100%; }
+.eatout li:hover { opacity:0.8; background:rgba(255, 255, 255, 0.26)}
+.eatout h3 { color:#fff;}
+.eatout p { float:left; margin-right:10px;}
+.stars { position: relative; bottom: 25px; }
+.stars h3 { float:right; display:inline;}
+
+.filterbox { background:rgba(107, 107, 107, 0.54); padding:0 20px; margin:10px auto; }
+.filterbox input { float:left;}
+.filterbox input, .filterbox select { margin:10px auto;}
 .recipes li a { color:#fff; font-size: 20px; line-height: 37px;  }
 .recipes li { border:1px dashed rgba(255, 255, 255, 0);  -moz-transition: all .5s linear;
      -webkit-transition: all .5s linear;
      transition: all .5s linear;}
+
+     .food { margin:-10px 15px; background:url(/img/food.png); height:45px; display:inline-block;}
+     .seamless { width:120px; background-position: 0 0; }
+     .grub { width:110px; background-position: 111px 0px; }
 .recipes li:hover { opacity:0.9; border:1px dashed #fff; color:#940011; }
 .recipes li:hover a p { color:#940011; }
 .items li.expired { background:rgba(255, 0, 0, 0.26) !important; }

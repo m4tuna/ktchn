@@ -22,7 +22,7 @@
 					<!-- Top-level Navigation -->
 					<li><a href="#/about">About</a></li>
 					<li ng-hide="state.user"><a href="#/login">Login</a></li>
-					<li ng-show="state.user"><a href="#" prevent-default class="btn btn-link" ng-click="logout()">Logout</a></li>
+					<li ng-show="state.user"><a href="#" prevent-default class="btn btn-link" ng-click="logout()">Logout of {{ state.user.name }}</a></li>
 				</ul>
 			</div>
 		</div>

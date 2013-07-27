@@ -4,23 +4,24 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />  
 
-	<title>hack</title>
+	<title>ktchn - build and manage your ktchn, let ktchn do the thinkin'</title>
 
 	<!-- Styles -->
 	<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="/style/bootstrap-ns.css" />
 	<link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,300italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="/style/ktchn.css" />
 </head>
 <body ng-controller="TopCtrl">
-	<div class="container-fluid" >
+	<div class="row-fluid" >
 		<div class="header">
 			<a class="home-logo pull-left" href="#/"> </a>
-			<div class="pull-right">
+			<div class="pull-left">
 				<ul class="nav main-nav inline">
 					<!-- Top-level Navigation -->
-					<li><a href="#/page-1">Page 1</a></li>
-					<li><a href="#/page-2">Page 2</a></li>
-					<li><a href="#/page-3">Page 3</a></li>
+					<li><a href="#/login">Login</a></li>
+					<li><a href="#/about">About</a></li>
 				</ul>
 			</div>
 		</div>
@@ -31,7 +32,7 @@
 		<div class="footer">
 			<ul class="inline">
 				<!-- Footer Links -->
-				<li><small class="pull-left">Copyright <%= (new Date()).getFullYear() %> NinjaStack, Inc.</small></li>
+				<li><small>Copyright <%= (new Date()).getFullYear() %> NinjaStack, Inc.</small></li>
 			</ul>
 		</div>
 	</div>

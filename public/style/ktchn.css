@@ -1,0 +1,35 @@
+body { background-color:#ececec; font-family: 'Lato', sans-serif; }
+h1, h2, h3, h4, h5, p { font-family: 'Lato', sans-serif; }
+h2 { font-size:50px;}
+h2, h3, h4 { font-weight:normal; }
+
+p, h2 { color:#fff; }
+
+.header { margin: 0; position: fixed; top: 0px; width: 90%; height: 58px; padding: 0 80px; box-shadow:1px 1px 1px #000; 
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top, #ffffff 0%, #eaeaea 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#eaeaea)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #ffffff 0%,#eaeaea 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #ffffff 0%,#eaeaea 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #ffffff 0%,#eaeaea 100%); /* IE10+ */
+background: linear-gradient(to bottom, #ffffff 0%,#eaeaea 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eaeaea',GradientType=0 ); /* IE6-9 */}
+.header .home-logo { float:right; margin-top:10px;  }
+.home-logo { background:url(/img/logo.png); display:block; height: 39px; width: 45px; }
+
+.home-wrapper { background:url(/img/bg.png) 0 0 no-repeat; background-size:cover; background-position: left top;  height:100%; width:100%; display:block;}
+.tagline { width:87.5%; padding:30px 100px; background:rgba(0, 0, 0, 0.5); margin:250px auto; text-align:center;}
+.tagline h2 { margin:30px auto;}
+.tagline .btn-ktchn { margin-left:30%; }
+.btn-ktchn { border:1px solid rgba(0, 0, 0, 0.26); background-color:#fff; padding:15px; font-family: 'Lato', sans-serif; font-size:15px; color:#000;}
+
+.stats { height:400px; }
+.stats li { line-height:30px; height:220px; background: rgba(255, 255, 255, 0.5); padding: 20px; box-shadow: 1px 0px 4px rgba(0, 0, 0, 0.26); }
+.stats li p { color:#000;}
+.items li { height: auto; padding: 0; background: transparent; }
+
+.footer { position:fixed; bottom:0; text-align: center; margin:0 auto; display:block; width:100%; background:#fff; }
+.footer small { text-align: center !important; margin:0 auto; }
+
+.nav li a { color: #000; margin-top: 20px; text-transform: uppercase; font-size: 11px; }
+.signup, .signin { background:rgba(0, 0, 0, 0.26); padding:50px 0;}

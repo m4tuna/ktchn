@@ -19,7 +19,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 .items .popover-content, .items .popover-title { background-color:#000; border:transparent; outline:none; padding:10px; border-radius:0px;}
 .items .pop.popover { border:none !important; box-shadow:0px #000;}
-.items .btn-ktchn { padding:3px 10px;}
+.items .btn-ktchn{ padding:3px 10px;}
 .items li.top { height:50px; background:transparent !important; }
 .items input { background: rgba(255, 255, 255, 0.61); height: 23px; border: 1px solid rgba(255, 255, 255, 0.38); }
 .home-wrapper { background:url(/img/bg.png) 0 0 no-repeat; background-size:cover; background-position: left top;  height:100%; width:100%; display:block;}
@@ -29,6 +29,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .tagline h2 { margin:30px auto;}
 .tagline .btn-ktchn { margin-left:30%; }
 .btn-ktchn { cursor:pointer; border:1px solid rgba(0, 0, 0, 0.26); background-color:#fff; padding:15px; font-family: 'Lato', sans-serif; font-size:15px; color:#000;}
+.btn-ktchn-tiny { cursor:pointer; border:1px solid rgba(0, 0, 0, 0.26); background-color:#fff; padding:4px; font-family: 'Lato', sans-serif; font-size:15px; color:#000;}
+.btn-ktchn-tiny:hover { opacity:0.6;}
 .boards { margin: 10px auto; background: rgba(255, 255, 255, 0.46); height: auto; padding: 50px 30px; display: block; float: left; width:96%; }
 .stats { height:400px; }
 .stats li { line-height:30px; height:220px; background: rgba(255, 255, 255, 0.5); padding: 20px; box-shadow: 1px 0px 4px rgba(0, 0, 0, 0.26); }

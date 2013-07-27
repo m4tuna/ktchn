@@ -70,6 +70,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .myktchn .tagline { margin:150px auto 50px; }
 .tagline { width:87%; padding:30px 100px; background:rgba(0, 0, 0, 0.68); margin:200px auto 140px; text-align:center;}
 .tagline2 { width:87%; padding:30px 100px; background:rgba(0, 0, 0, 0.68); margin:100px auto; text-align:center;}
+.tagline2 h3 { color:#fff;}
 .tagline h2 { margin:30px auto;}
 .tagline .btn-ktchn { margin-bottom:5px; }
 .btn-ktchn.giant { padding:22px !important; font-size:22px !important; position: relative; bottom: 5px;}

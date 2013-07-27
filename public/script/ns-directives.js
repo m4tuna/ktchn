@@ -20,4 +20,10 @@ angular
 				});
 		};
 	}
-]);
+]).directive('preventDefault', function() {
+	return function(scope,el,attrs) {
+		el.on(attrs.preventDefault, function(e) {
+			e.preventDefault();
+		})
+	};
+});

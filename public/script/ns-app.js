@@ -13,7 +13,7 @@ angular
 			.when('/', { templateUrl: '/views/home.html', controller: 'HomeCtrl' })
 			.when('/about', { templateUrl: '/views/about.html', controller: 'HomeCtrl' })
 			.when('/login', { templateUrl: '/views/login.html', controller: 'HomeCtrl' })
-			.when('/board', { templateUrl: '/views/board.html', controller: 'HomeCtrl' })
+			.when('/board', { templateUrl: '/views/board.html', controller: 'BoardCtrl' })
 			.otherwise('/404', { templateUrl: '/views/404.html', controller: 'DefaultCtrl' });
 	}
 ]).controller('TopCtrl',[ '$scope', '$rootScope', 'AppState',
@@ -25,6 +25,55 @@ angular
 	function($scope, AppState) {
 		console.log('initialize Default Control');
 		$scope.state = AppState;
+	}
+]).controller('BoardCtrl', [ '$scope', 'AppState',
+	function($scope, AppState) {
+		console.log('initialize Board Control');
+		$scope.state = AppState;
+
+		$scope.state.boards = [
+			{
+				name: 'Fridge',
+				items: [
+					{
+						name: 'fridgeitem1'
+					},
+					{
+						name: 'fridgeitem2'
+					}
+				]
+			},
+			{
+				name: 'Freezer',
+				items: [
+					{
+						name: 'freezeritem1'
+					}
+				]
+			},
+			{
+				name: 'Pantry',
+				items: [
+					{
+						name: 'pantryitem1'
+					}
+				]
+			},
+			{
+				name: 'Groceries',
+				items: [
+					{
+						name: 'groceryitem1'
+					}
+				]
+			},
+		];
+
+		$scope.addItem = function(board) {
+			board.items.push({ name: board.newitem });
+
+			delete board.newitem;
+		}
 	}
 ]).controller('HomeCtrl', [ '$scope', 'AppState',
 	function($scope, AppState) {

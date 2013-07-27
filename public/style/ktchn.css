@@ -56,11 +56,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
         transform:rotate(360deg);
     }
 }
+.items .add-btn { height:30px;}
 .items .popover-content, .items .popover-title { background-color:#000; border:transparent; outline:none; padding:10px; border-radius:0px;}
 .items .pop.popover { border:none !important; box-shadow:0px #000;}
 .items .btn-ktchn{ padding:3px 10px;}
 .items button.btn-ktchn:hover { opacity:0.6; color:#940011; background:#fff; text-decoration: none; }
-.items li.top { height:50px; background:transparent !important; }
+.items li.top { height:50px; background:rgba(255, 255, 255, 0.24) !important; width:77%; height:30px; border-radius:2px;}
 .myktchn .items li.top:hover { opacity:1; border:1px solid rgba(255, 255, 255, 0) !important;}
 .items input { outline:1px solid #000; border:1px solid #000; background: rgba(255, 255, 255, 0.7); height: 23px; border: 1px solid rgba(255, 255, 255, 0.38); }
 .items input:focus { background: rgba(255, 255, 255, 1); border:1px dashed #fff; outline:1px dashed #fff;}

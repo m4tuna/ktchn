@@ -23,11 +23,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .home-wrapper { background:url(/img/bg.png) 0 0 no-repeat; background-size:cover; background-position: left top;  height:100%; width:100%; display:block;}
 .myktchn { background:url(/img/bg2.png) 0 0 no-repeat; padding-bottom:25%; background-size:cover; background-position: left top;  height:100%; width:100%; display:block;}
 .myktchn .tagline { margin:150px auto 50px; }
-.tagline { width:87.5%; padding:30px 100px; background:rgba(0, 0, 0, 0.5); margin:250px auto; text-align:center;}
+.tagline { width:87.5%; padding:30px 100px; background:rgba(0, 0, 0, 0.68); margin:250px auto; text-align:center;}
 .tagline h2 { margin:30px auto;}
 .tagline .btn-ktchn { margin-left:30%; }
 .btn-ktchn { border:1px solid rgba(0, 0, 0, 0.26); background-color:#fff; padding:15px; font-family: 'Lato', sans-serif; font-size:15px; color:#000;}
-.boards { margin:10px auto;}
+.boards { margin: 10px auto; background: rgba(255, 255, 255, 0.46); height: auto; padding: 50px 30px; display: block; float: left; }
 .stats { height:400px; }
 .stats li { line-height:30px; height:220px; background: rgba(255, 255, 255, 0.5); padding: 20px; box-shadow: 1px 0px 4px rgba(0, 0, 0, 0.26); }
 .stats li p { color:#000;}

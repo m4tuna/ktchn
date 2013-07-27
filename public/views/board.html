@@ -1,6 +1,16 @@
+<script>$('.pop').popover();</script>
 <div class="wrapper row-fluid myktchn">
 	<div class="tagline">
-		<h2>my ktchn</h2>
+		<h2>my ktchn<a data-toggle="collapse" data-target="#recipes" class="inline btn-ktchn ">generate possible recipes</a></h2>
+		<div id="recipes" class="collapse">
+			<ul class="recipes">
+				<h2>Recipes</h2> 
+				<li><a href="#">Chicken Parmigiana</a>
+				<li><a href="#">Great American Grilled Chicken</a>
+				<li><a href="#">Chicken Dumplings</a>
+				<li><a href="#">Chicken and Couscous Salad</a>
+			</ul>
+		</div>
 	</div>
 	<div class="row-fluid">
 			<ul class="inline centered boards">
@@ -10,8 +20,21 @@
 					<ul class="items">
 						<li class="top">
 							<input type="text" class="span8"><a href="#" class="btn-ktchn span3 first-span pull-right">add</a></li>
-						<li>fridgeitem1</li>
-						<li>fridgeitem1</li>
+						<li class="pop" data-trigger="hover" data-toggle="popover" data-content="Added Yesterday" data-original-title="Chicken">
+							Chicken
+						</li>
+						<li class="pop" data-trigger="hover" data-toggle="popover" data-content="Added Yesterday" data-original-title="Celery">
+							Celery
+						</li>
+						<li class="pop" data-trigger="hover" data-toggle="popover" data-content="Added Yesterday" data-original-title="Broccoli">
+							Broccoli
+						</li>
+						<li class="pop check" data-trigger="hover" data-toggle="popover" data-content="Added 1 month ago" data-original-title="Chicken">
+							Eggs
+						</li>
+						<li class="pop expired" data-trigger="hover" data-toggle="popover" data-content="EXPIRED REPLACE NOW" data-original-title="Milk">
+							Milk
+						</li>
 					</ul>
 				</li>
 				<li class="span3">
@@ -19,7 +42,15 @@
 					<p>Add items to your freezer</p>
 					<ul class="items">
 						<li class="top"><input type="text" class="span8"><a href="#" class="btn-ktchn span3 first-span pull-right">add</a></li>
-						<li>freezeritem1</li>
+						<li class="pop" data-trigger="hover" data-toggle="popover" data-content="Added 2 months ago" data-original-title="Chicken">
+							Chicken
+						</li>
+						<li class="pop" data-trigger="hover" data-toggle="popover" data-content="Added 3 weeks ago" data-original-title="Burgers">
+							Burgers
+						</li>
+						<li class="pop" data-trigger="hover" data-toggle="popover" data-content="Added 1 month ago" data-original-title="Ribs">
+							Ribs
+						</li>
 					</ul>
 				</li>
 				<li class="span3">
@@ -27,7 +58,21 @@
 					<p>Add items to your pantry</p>
 					<ul class="items">
 						<li class="top"><input type="text" class="span8"><a href="#" class="btn-ktchn span3 first-span pull-right">add</a></li>
-						<li>pantryitem1</li>
+						<li class="pop" data-trigger="hover" data-toggle="popover" data-content="Added 2 months ago" data-original-title="Chicken">
+							Salt
+						</li>
+						<li class="pop" data-trigger="hover" data-toggle="popover" data-content="Added 2 months ago" data-original-title="Sugar">
+							Sugar
+						</li>
+						<li class="pop" data-trigger="hover" data-toggle="popover" data-content="Added 2 months ago" data-original-title="Black Pepper">
+							Black Pepper
+						</li>
+						<li class="pop check" data-trigger="hover" data-toggle="popover" data-content="Added 1 month ago" data-original-title="Red Pepper">
+							Red Pepper
+						</li>
+						<li class="pop expired" data-trigger="hover" data-toggle="popover" data-content="Added 2 months ago" data-original-title="Paprika">
+							Paprika
+						</li>
 					</ul>
 				</li>
 				<li class="span3">
@@ -35,7 +80,9 @@
 					<p>Add items to your grocery list</p>
 					<ul class="items">
 						<li class="top"><input type="text" class="span8"><a href="#" class="btn-ktchn span3 first-span pull-right">add</a></li>
-						<li>pantryitem1</li>
+						<li class="pop expired" data-trigger="hover" data-toggle="popover" data-content="EXPIRED REPLACE NOW" data-original-title="Milk">
+							Milk
+						</li>
 					</ul>
 				</li>
 			</ul>

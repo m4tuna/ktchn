@@ -66,7 +66,7 @@ angular
 				name: 'Fridge',
 				items: [
 					{
-						name: 'fridgeitem2'
+						name: 'baking soda'
 					}
 				]
 			},
@@ -74,7 +74,7 @@ angular
 				name: 'Freezer',
 				items: [
 					{
-						name: 'freezeritem1'
+						name: 'ice'
 					}
 				]
 			},
@@ -82,7 +82,7 @@ angular
 				name: 'Pantry',
 				items: [
 					{
-						name: 'pantryitem1'
+						name: 'salt'
 					}
 				]
 			},

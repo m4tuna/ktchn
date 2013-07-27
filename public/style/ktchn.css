@@ -97,6 +97,8 @@ ul.recipes { text-align: left; padding:0 30px; }
 .eatout p { float:left; margin-right:10px;}
 .stars { position: relative; bottom: 25px; }
 .stars h3 { float:right; display:inline;}
+.Fridge .sample, .Pantry .sample, .Freezer .sample { display:none; }
+.Groceries .sample2, .Pantry .sample2, .Freezer .sample2 { display:none; }
 
 .filterbox { background:rgba(107, 107, 107, 0.54); padding:0 20px; margin:10px auto; }
 .filterbox input { float:left;}

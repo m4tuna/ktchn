@@ -21,6 +21,8 @@
 				<ul class="nav main-nav inline">
 					<!-- Top-level Navigation -->
 					<li><a href="#/about">About</a></li>
+					<li ng-hide="state.user"><a href="#/login">Login</a></li>
+					<li ng-show="state.user"><a href="#" prevent-default class="btn btn-link" ng-click="logout()">Logout</a></li>
 				</ul>
 			</div>
 		</div>
@@ -43,6 +45,10 @@
 	<script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js" type="text/javascript" ></script>
 	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js" type="text/javascript" ></script>
 	<script type="text/javascript" src="/script/angular-resource.js"></script>
+
+	<script type='text/javascript' src='//cdn.firebase.com/v0/firebase.js'></script>
+	<script type='text/javascript' src='//cdn.firebase.com/v0/firebase-simple-login.js'></script>
+	<script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/angularFire/0.1.0/angularfire.min.js'></script>
 
 	<!-- NS Scripts -->
 	<script type="text/javascript" src="/script/ns-services.js"></script>

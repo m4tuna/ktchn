@@ -56,7 +56,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
         transform:rotate(360deg);
     }
 }
-
 .items .popover-content, .items .popover-title { background-color:#000; border:transparent; outline:none; padding:10px; border-radius:0px;}
 .items .pop.popover { border:none !important; box-shadow:0px #000;}
 .items .btn-ktchn{ padding:3px 10px;}
@@ -66,7 +65,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .home-wrapper { background:url(/img/bg.png) 0 0 no-repeat; background-size:cover; background-position: left top;  height:100%; width:100%; display:block;}
 .myktchn { background:url(/img/bg2.png) 0 0 no-repeat; padding-bottom:25%; background-size:cover; background-position: left top;  height:100%; width:100%; display:block;}
 .myktchn .tagline { margin:150px auto 50px; }
-.tagline { width:87%; padding:30px 100px; background:rgba(0, 0, 0, 0.68); margin:250px auto; text-align:center;}
+.tagline { width:87%; padding:30px 100px; background:rgba(0, 0, 0, 0.68); margin:200px auto 140px; text-align:center;}
 .tagline2 { width:87%; padding:30px 100px; background:rgba(0, 0, 0, 0.68); margin:100px auto; text-align:center;}
 .tagline h2 { margin:30px auto;}
 .tagline .btn-ktchn { margin-bottom:5px; }
@@ -79,7 +78,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .btn-ktchn-tiny:hover { opacity:0.6;}
 .boards { margin: 10px auto; background: rgba(255, 255, 255, 0.63); height: auto; padding: 50px 30px; display: block; float: left; width:96%; }
 .stats { height:400px; }
-.stats li { line-height:30px; height:220px; background: rgba(255, 255, 255, 0.5); padding: 20px; box-shadow: 1px 0px 4px rgba(0, 0, 0, 0.26); }
+.stats li { line-height:30px; height:300px; background: rgba(255, 255, 255, 0.75); padding: 30px 10px; box-shadow: 1px 0px 4px rgba(0, 0, 0, 0.26); }
 .stats li p { color:#000;}
 .items li { margin:12px 30px; background:solid rgba(0, 0, 0, 0.26); height: auto; padding: 0; background: transparent; cursor:pointer; 
  -moz-transition: all .5s linear;
